@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-cq2cqJoqZIhtlIEdzrCBmIYwOGb5F/61dnx27imxLRkTQOpeYplQrXp6EoiY12BRSkNZQuLNL5Wi2LwLNp1WZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.ytimg.com/vi/dJR-leqZQyc/maxresdefault.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .home-container {
+            text-align: center;
+            margin: 20px;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .shining-effect {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shining-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 150%;
+            height: 100%;
+            background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+            animation: shining 1.5s infinite linear;
+        }
+
+        @keyframes shining {
+            to {
+                left: 100%;
+            }
+        }
+
+        .signup-button,
+        .why-us-button,
+        .social-icons a {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .signup-button {
+            background-color: #7f8c8d; /* Grey color */
+        }
+
+        .signup-button:hover {
+            background-color: #616a6b; /* Darker grey on hover */
+            box-shadow: 0 0 20px rgba(97, 106, 107, 0.7);
+        }
+
+        .why-us-button {
+            background-color: #7f8c8d; /* Grey color */
+        }
+
+        .why-us-button:hover {
+            background-color: #616a6b; /* Darker grey on hover */
+            box-shadow: 0 0 20px rgba(97, 106, 107, 0.7);
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-icons a:hover {
+            color: #ecf0f1;
+        }
+
+        h2 {
+            font-size: 30px; /* Adjust the font size for h2 */
+        }
+
+        p {
+            font-size: 18px; /* Adjust the font size for p */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>      Navigating Hyderbad...</h1>
+        <p>Hyderabad is more than Biryani..</p>
+    </header>
+
+    <div class="home-container">
+        <h2>Welcome to Hyderabad!</h2>
+        <p>Explore the beauty of the city.</p>
+        <a href="register.php" class="signup-button shining-effect">Sign Up</a>
+        <a href="whyus.html" class="why-us-button shining-effect">Details</a>
+    </div>
+
+</body>
+
+</html>
